@@ -12,7 +12,10 @@ function Introduction() {
                     <h3> but everyone&rsquo;s calling me Maddy.</h3>
 
                     <section className="emojis">
-                        🪞🕊️🤍✨
+                        <span role="img" aria-label="mirror"> 🪞 </span>
+                        <span role="img" aria-label="dove"> 🕊️ </span>
+                        <span role="img" aria-label="heart"> 🤍 </span>
+                        <span role="img" aria-label="sparkles"> ✨ </span>
                     </section>
                     
                     <div className="introduction-images">

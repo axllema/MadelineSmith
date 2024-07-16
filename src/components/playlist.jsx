@@ -1,4 +1,3 @@
-import React from 'react';
 // import songImage1 from '../assets/images/song1.jpg';
 // import songImage2 from '../assets/images/song2.jpg';
 // import songImage3 from '../assets/images/song3.jpg';
@@ -13,7 +12,7 @@ function Playlist() {
         { color: '#D1CAC4', label: '｡ﾟ𖤓 ﾟ Gimme! Gimme! Gimme! - ABBA ｡ﾟ𖤓 ﾟ' },
         { color: '#B3ADA4', label: '˚⋆ᡣ𐭩 Off To The Races - Lana Del Rey ᡣ𐭩˚⋆' },
         { color: '#E7E1DA', label: '✮⋆˙ The Chain - Fletwood Mac ✮⋆˙' },
-        { color: '#DCCDBF', label: '༘ ೀ Make Up - Ariana Grande  ༘ ೀ' },
+        { color: '#DCCDBF', label: '༘ ೀ Water - Tyla  ༘ ೀ' },
         { color: '#B4A09B', label: '˖°𓇼 Hailee Steinfeld - Coast 𓇼°˖' },
     ];
 

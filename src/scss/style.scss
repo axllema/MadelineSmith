@@ -1,6 +1,4 @@
-// @import "utils/_mixins.scss";
-
-// @import "components/_loader.scss";
+@import "utils/_mixins.scss";
 
 @import "base/_base.scss";
 
@@ -8,3 +6,11 @@
 @import "layout/_footer.scss";
 
 @import "pages/_homepage.scss";
+@import "pages/_contact.scss";
+@import "pages/_gallery.scss";
+
+
+@import "components/_loader.scss";
+@import "components/_introduction.scss";
+@import "components/_playlist.scss";
+@import "components/_bottomsection.scss";

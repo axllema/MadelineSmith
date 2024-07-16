@@ -1,4 +1,3 @@
-import React from 'react';
 import Maddy1 from '../assets/img/maddy1.jpg';
 import Maddy2 from '../assets/img/maddy2.jpg';
 import Job from '../assets/img/job1.jpg';
@@ -9,8 +8,8 @@ function Introduction() {
     return (
         <section className="introduction">
                     
-                    <h2> Hi, I'm Madeline Smith.</h2>
-                    <h3> but everyone's calling me Maddy.</h3>
+                    <h2> Hi, I&apos;m Madeline Smith.</h2>
+                    <h3> but everyone&rsquo;s calling me Maddy.</h3>
 
                     <section className="emojis">
                         🪞🕊️🤍✨

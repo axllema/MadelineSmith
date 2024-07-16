@@ -1,0 +1,19 @@
+.audio-player {
+    .controls {
+        margin-top: 10px;
+
+        button {
+            background-color: #ad5a22;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+
+            &:hover {
+                background-color: #944416;
+            }
+        }
+    }
+}

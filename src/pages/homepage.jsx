@@ -1,70 +1,43 @@
-// import Loader from '../components/Loader';
+import { useEffect, useState } from 'react';
+import Loader from '../components/loader';
 import Header from '../layout/header';
-import SurferGirl from '../assets/img/surfergirl1.jpg';  
+import Banner from '../components/banner.jsx';
 import Introduction from '../components/introduction.jsx';
-import Maddy3 from '../assets/img/maddy3.jpg';
-import SantaBarbara from '../assets/img/santabarbara1.jpg';
-import Maddy4 from '../assets/img/maddy4.jpg';
-import Smiley from '../assets/img/smiley2.jpg';
+import AudioPlayer from '../components/audioplayer';
+import BottomSection from '../components/bottomsection.jsx';
 import Playlist from '../components/playlist.jsx';
 import Footer from '../layout/footer.jsx';
-import '../scss/style.scss'
+import '../scss/style.scss';
 import '../scss/pages/_homepage.scss';
 
 function Homepage() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div>
-            {/* <Loader visible={loading} /> */}
+            <Loader visible={loading} />
         
             <div className="homepage"> 
-
                 <Header className="header"/>
-
-                <section className="hero">
-                    <img alt="Surfer Girl" src={SurferGirl} className="hero-image" />
-
-                    <div className="hero-text">
-                        <p className='text1'>I&apos;ll be </p>
-                        <p className='text2'> <i>hair</i> for you...</p>
-
-                        <button> ♡  life moments ♡ </button>
-                    </div>
-
-                </section>
-
+                <Banner/>
                 <Introduction/>
-
-                <section className="bottom-page">
-
-                    <div className="bottom-page-images">
-                            <img alt="Madeline Smith" src={Maddy3} className='bottom-page-images-maddy' />
-                            <img alt="Santa Barbara" src={SantaBarbara} className='bottom-page-images-santabarbara' />
-                            <img alt="Smiley" src={Smiley} className='bottom-page-images-smiley1' />
-                            <img alt="Madeline Smith" src={Maddy4} className='bottom-page-images-maddyplage' />
-                            <img alt="Smiley" src={Smiley} className='bottom-page-images-smiley2' />
-                    </div>
-
-                    <section className="bottom-page-quotes">
-                        <h2> WHEREVER THE WIND BLOWS...</h2>
-                        <p className='bottom-page-quotes-one'>&quot;You have been going about it all wrong, you know that you have done this all along.&quot;</p>
-
-                        <ul className="bottom-page-quotes-list">
-                            <li>&quot;Just remember...</li>
-                            <li>you have no idea how amazing life is about to get.</li>
-                            <li>Just trust the process.&quot;</li>
-                        </ul>
-
-                        <section className="bottom-page-quotes-emojis">
-                            ‧₊˚🤍ྀི✩ ₊˚🎧₊˚☁️₊🌊.⋆🐚.ೃ⊹♡
-                        </section>
-                    </section>
-
-                </section>
-
+                
+                {/* Utilisation de AudioPlayer avec démarrage automatique */}
+                <AudioPlayer audioSrc="../src/assets/Water.mp3" />
+                
+                <BottomSection />
             </div>
-
-                <Playlist />
-                <Footer/>
+            
+            <Playlist />
+            <Footer/>
         </div>
     );
 }

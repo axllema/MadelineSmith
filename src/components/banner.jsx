@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SurferGirl from '../assets/img/surfergirl1.jpg';  
 import '../scss/style.scss'
+import '../scss/components/_banner.scss';
 
 function Banner() {
     return (
@@ -9,7 +10,7 @@ function Banner() {
 
         <div className="banner-text">
             <p className='text1'>I&apos;ll be </p>
-            <p className='text2'> <i>hair</i> for you...</p>
+            <p className='text2'> <i className='hair'> hair </i> for you...</p>
 
         <div className='buttons'>
             <Link to="/gallery">

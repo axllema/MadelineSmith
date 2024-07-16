@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
 import Loader from '../components/loader';
-import Header from '../layout/header';
-import Banner from '../components/banner.jsx';
-import Introduction from '../components/introduction.jsx';
-import AudioPlayer from '../components/audioplayer';
-import BottomSection from '../components/bottomsection.jsx';
-import Playlist from '../components/playlist.jsx';
-import Footer from '../layout/footer.jsx';
+import Banner from '../components/banner';
+import Introduction from '../components/introduction';
+import BottomSection from '../components/bottomsection';
+import Playlist from '../components/playlist';
 import '../scss/style.scss';
 import '../scss/pages/_homepage.scss';
+import Header from '../layout/header.jsx';
 
 function Homepage() {
     const [loading, setLoading] = useState(true);
@@ -26,18 +24,15 @@ function Homepage() {
             <Loader visible={loading} />
         
             <div className="homepage"> 
-                <Header className="header"/>
-                <Banner/>
-                <Introduction/>
-                
-                {/* Utilisation de AudioPlayer avec démarrage automatique */}
-                <AudioPlayer audioSrc="../src/assets/Water.mp3" />
+                <Header />
+                <Banner />
+                <Introduction />
                 
                 <BottomSection />
+
+                <Playlist />
+
             </div>
-            
-            <Playlist />
-            <Footer/>
         </div>
     );
 }

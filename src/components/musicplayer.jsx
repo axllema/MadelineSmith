@@ -9,26 +9,28 @@ import '../scss/style.scss';
 const MusicPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentTrack, setCurrentTrack] = useState(0);
-    const soundRef = useRef(null); // Référence pour stocker l'instance Howl
+    // Référence pour stocker l'instance Howl
+    const soundRef = useRef(null);
 
     const tracks = useMemo(() => [
         {
-            title: ' Water - Tyla',
+            title: '⋆˚𝜗𝜚 Water - Tyla⋆˚𝜗𝜚 ',
             src: [Water],
         },
         {
-            title: ' Looking at Me - Sabrina Carpenter',
+            title: '⋆˚𝜗𝜚 Looking at Me - Sabrina Carpenter⋆˚𝜗𝜚',
             src: [Looking],
         },
         {
-            title: ' Coast -  Hailee Steinfeld',
+            title: '⋆˚𝜗𝜚 Coast -  Hailee Steinfeld⋆˚𝜗𝜚 ',
             src: [Coast],
         }
     ], []);
 
     const playSound = useCallback((trackIndex) => {
         if (soundRef.current) {
-            soundRef.current.stop(); // Arrête la piste actuelle si elle est en cours
+            // Arrête la piste actuelle si elle est en cours
+            soundRef.current.stop();
         }
         // Crée une nouvelle instance Howl pour la piste sélectionnée
         const sound = new Howl({
@@ -37,7 +39,8 @@ const MusicPlayer = () => {
         });
         sound.play();
         setIsPlaying(true);
-        soundRef.current = sound; // Stocke la nouvelle instance Howl dans la référence
+        // Stocke la nouvelle instance Howl dans la référence
+        soundRef.current = sound;
     }, [tracks]);
 
     const playTrack = useCallback((trackIndex) => {
@@ -62,13 +65,15 @@ const MusicPlayer = () => {
 
     const togglePlayPause = () => {
         if (isPlaying) {
-            soundRef.current.pause(); // Utilise pause() au lieu de stop()
+            // Utilise pause() au lieu de stop()
+            soundRef.current.pause();
             setIsPlaying(false);
         } else {
             if (soundRef.current) {
                 soundRef.current.play();
             } else {
-                playTrack(currentTrack); // Joue la piste si aucune instance Howl n'existe
+                // Joue la piste si aucune instance Howl n'existe
+                playTrack(currentTrack);
             }
             setIsPlaying(true);
         }
@@ -92,18 +97,19 @@ const MusicPlayer = () => {
     return (
 
         <div className="music-player">
-            <div className="controls">
-                <button onClick={playPreviousTrack}>Previous</button>
-                <button onClick={togglePlayPause}>
-                    {isPlaying ? 'Pause' : 'Play'}
+            <div className="music-player-controls">
+                <button onClick={playPreviousTrack} className='music-player-controls-button'> ⏮ </button>
+                <button onClick={togglePlayPause} className='music-player-controls-button'>
+                    {isPlaying ? '⏸' : '▶︎'}
                 </button>
-                <button onClick={playNextTrack}>Next</button>
+                <button onClick={playNextTrack} className='music-player-controls-button'> ⏭ </button>
             </div>
-            <div className="track-info">
+
+            <div className="music-player-track-info">
                 <h2>{tracks[currentTrack].title}</h2>
             </div>
         </div>
-        
+
     );
 };
 

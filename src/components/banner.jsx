@@ -11,9 +11,16 @@ function Banner() {
             <p className='text1'>I&apos;ll be </p>
             <p className='text2'> <i>hair</i> for you...</p>
 
+        <div className='buttons'>
             <Link to="/gallery">
                 <button> ♡ life moments ♡ </button>
             </Link>
+
+            <Link to="/contact">
+                <button className='button, lol'> ♡ contact me ♡ </button>
+            </Link>
+        </div>
+
         </div>
 
     </section>

@@ -1,0 +1,30 @@
+.music-player {
+    .controls {
+        margin-top: 10px;
+
+        button {
+            background-color: #ad5a22;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: #944416;
+            }
+        }
+    }
+
+    .track-info {
+        margin-top: 10px;
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+        }
+    }
+}

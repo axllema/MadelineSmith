@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
+import MusicPlayer from '../components/musicplayer';
 import '../scss/layout/_header.scss';
 
 const Header = () => {
-
     return (
         <header className="header">
             <Link to="/" className="link">
                 <h1>MADELINE SMITH</h1>
             </Link>
+
+            <MusicPlayer />
 
             <nav>
                 <ul>
@@ -19,6 +21,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+
         </header>
     );
 };

@@ -9,7 +9,7 @@ function Introduction() {
         <section className="introduction">
                     
                     <h2> Hi, I&apos;m Madeline Smith.</h2>
-                    <h3> but everyone&rsquo;s calling me Maddy.</h3>
+                    <h3> but everyone calls me Maddy.</h3>
 
                     <section className="emojis">
                         <span role="img" aria-label="mirror"> 🪞 </span>

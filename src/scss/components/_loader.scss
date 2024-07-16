@@ -1,19 +1,10 @@
 $w: 5px;
-$h: 20*$w;
+$h: 20 * $w;
 $count: 20;
 $time: 2s;
-$delay: $time/2;
+$delay: $time / 2;
 
 @mixin animation($name) {
-    @-webkit-keyframes #{$name} {
-        @content;
-    }
-    @-moz-keyframes #{$name} {
-        @content;
-    }
-    @-o-keyframes #{$name} {
-        @content;
-    }
     @keyframes #{$name} {
         @content;
     }
@@ -21,8 +12,6 @@ $delay: $time/2;
 
 @include animation(rotate) {
     100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -57,72 +46,57 @@ $delay: $time/2;
     background-color: #e8e1d7;
     z-index: 1000;
 
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-animation: rotate 3*$time infinite;
-        -moz-animation: rotate 3*$time infinite;
-        -o-animation: rotate 3*$time infinite;
-        animation: rotate 3*$time infinite;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-    }
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: rotate 3 * $time infinite linear;
+}
 
-    .line {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: $w;
-        height: $h;
-        background: #ad5a22;
-        border-radius: $w;
-        -ms-transform-origin: 50% 0%;
-        -webkit-transform-origin: 50% 0%;
-        -moz-transform-origin: 50% 0%;
-        -o-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
+.line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: $w;
+    height: $h;
+    background: #ad5a22;
+    border-radius: $w;
+    transform-origin: 50% 0%;
 
-        @for $i from 1 through $count {
-            &:nth-child(#{$i}) {
-                -ms-transform: rotate($i*(360deg/$count));
-                -webkit-transform: rotate($i*(360deg/$count));
-                transform: rotate($i*(360deg/$count));
-                -webkit-animation: move $time infinite;
-                -moz-animation: move $time infinite;
-                -o-animation: move $time infinite;
-                animation: move $time infinite;
+    @for $i from 1 through $count {
+    &:nth-child(#{$i}) {
+        transform: rotate($i * (360deg / $count));
+        animation: move $time infinite;
 
-                @if ($i % 2 == 0) {
-                    -webkit-animation-delay: $delay;
-                    animation-delay: $delay;
-                }
-            }
+        @if ($i % 2 == 0) {
+        animation-delay: $delay;
         }
     }
-
-    .loader-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #ffffff;
-        font-family: 'YourFont', sans-serif;
-        animation: fadeIn 2s ease-in-out;
-
-        .loader-text-top,
-        .loader-text-bottom {
-            font-size: 24px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .loader-text-top {
-            transform: translateY(-50%) rotate(-10deg);
-        }
-
-        .loader-text-bottom {
-            transform: translateY(50%) rotate(10deg);
-        }
     }
+}
+
+.loader-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-family: 'YourFont', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+
+    .loader-text-top,
+    .loader-text-bottom {
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+    }
+
+    .loader-text-top {
+    transform: translateY(-50%) rotate(-10deg);
+    }
+
+    .loader-text-bottom {
+    transform: translateY(50%) rotate(10deg);
+    }
+}
 }

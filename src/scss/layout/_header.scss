@@ -5,6 +5,12 @@
     justify-content: space-between;
     padding: 20px;
     background-color: #fff;
+    position: fixed;
+    top : 0;
+    z-index:1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
 
     .link {
         text-decoration: none; // Supprime le soulignement pour tous les liens avec la classe .link

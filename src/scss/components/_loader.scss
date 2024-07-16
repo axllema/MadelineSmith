@@ -1,8 +1,10 @@
+@use "sass:math";
+
 $w: 5px;
 $h: 20 * $w;
 $count: 20;
 $time: 2s;
-$delay: $time / 2;
+$delay: math.div($time, 2);
 
 @mixin animation($name) {
     @keyframes #{$name} {
@@ -21,7 +23,7 @@ $delay: $time / 2;
         height: $h;
     }
     50% {
-        height: $h / 2.5;
+        height: math.div($h, 2.5);
     }
 }
 
@@ -45,6 +47,7 @@ $delay: $time / 2;
     align-items: center;
     background-color: #e8e1d7;
     z-index: 1000;
+}
 
 .container {
     position: absolute;
@@ -64,14 +67,14 @@ $delay: $time / 2;
     transform-origin: 50% 0%;
 
     @for $i from 1 through $count {
-    &:nth-child(#{$i}) {
-        transform: rotate($i * (360deg / $count));
-        animation: move $time infinite;
+        &:nth-child(#{$i}) {
+            transform: rotate($i * math.div(360deg, $count));
+            animation: move $time infinite;
 
-        @if ($i % 2 == 0) {
-        animation-delay: $delay;
+            @if ($i % 2 == 0) {
+                animation-delay: $delay;
+            }
         }
-    }
     }
 }
 
@@ -87,16 +90,15 @@ $delay: $time / 2;
 
     .loader-text-top,
     .loader-text-bottom {
-    font-size: 24px;
-    animation: fadeIn 2s ease-in-out;
+        font-size: 24px;
+        animation: fadeIn 2s ease-in-out;
     }
 
     .loader-text-top {
-    transform: translateY(-50%) rotate(-10deg);
+        transform: translateY(-50%) rotate(-10deg);
     }
 
     .loader-text-bottom {
-    transform: translateY(50%) rotate(10deg);
+        transform: translateY(50%) rotate(10deg);
     }
-}
 }

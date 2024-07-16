@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+
+    h1 {
+        font-family: 'Arial, sans-serif';
+        margin: 0;
+        font-size: 30px;
+        color: #ad5a22;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+
+        li a {
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: #ad5a22;
+        }
+        }
+    }
+}

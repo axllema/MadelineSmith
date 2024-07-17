@@ -1,3 +1,65 @@
 .instafeed {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fcf8ed;
+    padding: 40px 0;
+
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 1500px;
+        background-color: rgba(232, 225, 215, 0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        z-index : 3;
+
+        &-title {
+            color: #553119;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: italic;
+            transition: transform 0.3s ease;
+            padding-bottom: 1rem;
+        }
+
+        &-photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+
+            &-item {
+                position: relative;
+                width: 25%;
+                overflow: hidden;
+            
+                &:before {
+                    content: "";
+                    display: block;
+                }
+
+                &-img {
+                    top: 0;
+                    gap : 0px;
+                    width: 70%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }

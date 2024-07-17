@@ -27,7 +27,38 @@ function Gallery() {
             <div className='gallery-elements'>
 
                 <div className='gallery-elements-quotes'>
-                    <p> QUOTE </p>
+
+                <div className='gallery-elements-quotes-one'>
+                    <p>
+                        <span className="hover-effect">❀</span>
+                        <span className="hover-effect">𖤣</span>
+                        <span className="hover-effect">𖥧</span>
+                        <span className="hover-effect">𖡼</span>
+                        <span className="hover-effect">⊱</span>
+                        <span className="hover-effect">✿</span>
+                        <span className="hover-effect">⊰</span>
+                        <span className="hover-effect">𖡼</span>
+                        <span className="hover-effect">𖥧</span>
+                        <span className="hover-effect">𖤣</span>
+                        <span className="hover-effect">❀</span>
+                    </p>
+                    <p className='gallery-elements-quotes-one-title'>LIFE MOMENTS</p>
+                    <p>
+                        <span className="hover-effect">❀</span>
+                        <span className="hover-effect">𖤣</span>
+                        <span className="hover-effect">𖥧</span>
+                        <span className="hover-effect">𖡼</span>
+                        <span className="hover-effect">⊱</span>
+                        <span className="hover-effect">✿</span>
+                        <span className="hover-effect">⊰</span>
+                        <span className="hover-effect">𖡼</span>
+                        <span className="hover-effect">𖥧</span>
+                        <span className="hover-effect">𖤣</span>
+                        <span className="hover-effect">❀</span>
+                    </p>
+                </div>
+
+                    <p className='gallery-elements-quotes-text'> &quot;be fearless in the pursuit of what sets your soul on fire.&quot; </p>
                 </div>
 
                 <div className='gallery-elements-filters'>
@@ -36,7 +67,11 @@ function Gallery() {
 
 
                 <div className='gallery-interlude'>
-                    <p> ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆ </p>
+                    <p> ･*:❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･ </p>
+                    <p></p>
+                    <p> ˙✧˖°･  [◉¯] ･ ༘ ⋆｡° </p>
+                    <p></p>
+                    <p> ･*:❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･ </p>
                 </div>
 
 

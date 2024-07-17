@@ -1,6 +1,4 @@
 import { useState } from 'react';
-// import Maddy3 from '../assets/img/maddy3.jpg';
-// import SantaBarbara from '../assets/img/santabarbara1.jpg';
 import Maddy4 from '../assets/img/maddy4.jpg';
 import Maddy2 from '../assets/img/maddy2.jpg';
 import GimmeImg from '../assets/img/gimme.jpg';
@@ -11,9 +9,9 @@ import '../scss/components/_photosfilter.scss';
 const PhotosFilter = () => {
     const initialPhotos = [
         { id: 1, category: 'selfie', src: Maddy4, caption: 'mind as peaceful as the sea', rotationClass: 'rotate-right-5' },
-        { id: 2, category: 'bestie', src: GimmeImg, caption: '<3', rotationClass: 'rotate-left-5' },
+        { id: 2, category: 'bestie', src: GimmeImg, caption: '<3', rotationClass: 'rotate-left-2' },
         { id: 3, category: 'job', src: Job2, caption: 'job ? more like passion', rotationClass: 'rotate-right-10' },
-        { id: 4, category: 'selfie', src: Maddy2, caption: 'heyy', rotationClass: 'rotate-left-5' },
+        { id: 4, category: 'selfie', src: Maddy2, caption: 'your fav cowgirl', rotationClass: 'rotate-left-5' },
     ];
 
     const [photos] = useState(initialPhotos);

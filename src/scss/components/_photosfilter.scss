@@ -9,7 +9,7 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        padding: 60px;
+        padding: 60px 30px 60px 30px;
     }
 
     &-wrap {
@@ -102,11 +102,17 @@
 }
 
 /* Rotation classes */
+.rotate-left-2{
+    transform: rotate(-2deg);
+}
 .rotate-left-5 {
     transform: rotate(-5deg);
 }
 .rotate-left-10 {
     transform: rotate(-10deg);
+}
+.rotate-right-2 {
+    transform: rotate(2deg);
 }
 .rotate-right-5 {
     transform: rotate(5deg);
@@ -116,8 +122,10 @@
 }
 
 /* Hover classes */
+.rotate-left-2:hover,
 .rotate-left-5:hover,
 .rotate-left-10:hover,
+.rotate-right-2:hover,
 .rotate-right-5:hover,
 .rotate-right-10:hover {
     transform: rotate(0deg) scale(1.05);

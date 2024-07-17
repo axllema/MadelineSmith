@@ -12,11 +12,26 @@
     width: 100%;
     box-sizing: border-box;
 
+    .left, .music-player-container, .right {
+        flex: 1;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .left, .right {
+        justify-content: flex-start;
+    }
+    
+    .right {
+        justify-content: flex-end; 
+    }
+    
+
     .link {
-        text-decoration: none; // Supprime le soulignement pour tous les liens avec la classe .link
+        text-decoration: none; 
 
         &:hover, &:visited {
-            text-decoration: none; // Assure que le lien reste non souligné même après avoir été visité ou au survol
+            text-decoration: none;
         }
     }
 

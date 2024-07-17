@@ -1,3 +1,30 @@
 .gallery {
+    position: relative;
+    width: 100%;
     margin-top: 128px;
+    
+    &-elements {
+        display: flex;
+        flex-direction: column;
+        
+        &-quotes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e8e1d7;
+            height: 400px;
+            gap: 20px;
+        }
+    }
+
+    &-interlude{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: #553119;
+        height: 40px;
+        color: #fcf8ed;
+        font-size: 25px;
+    }
 }

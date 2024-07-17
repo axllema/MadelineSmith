@@ -6,14 +6,18 @@ import '../scss/components/_instafeed.scss';
 
 const InstaFeed = () => {
     return (
-        <div>
+        <div className='instafeed'>
 
-            <div>
+        <div className='instafeed-container'>
+
+            <div className='instafeed-container-photos'>
                 <img alt="Madeline Smith" src={Maddy3} className='' />
                 <img alt="Santa Barbara" src={SantaBarbara} className='' />
                 <img alt="Madeline Smith" src={Maddy4} className='' />
             </div>
-            
+
+        </div>
+
         </div>
 
 

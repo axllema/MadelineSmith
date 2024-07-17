@@ -26,27 +26,22 @@ function Gallery() {
 
             <div className='gallery-elements'>
 
-                <h1>Gallery Page</h1>
-                <p> QUOTE </p>
+                <div className='gallery-elements-quotes'>
+                    <p> QUOTE </p>
+                </div>
 
                 <div className='gallery-elements-filters'>
                     <PhotosFilter />
-                    
-                    <p>Photos randoms + des reseaux</p>
-
-                    <ul>
-                        <li>selfie</li>
-                        <li>bestie</li>
-                        <li>job - hairdresser</li>
-                    </ul>
                 </div>
+
+
+                <div className='gallery-interlude'>
+                    <p> ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆ </p>
+                </div>
+
 
                 <div className='gallery-elements-feed'>
                     <InstaFeed/>
-                    
-                    <ul>
-                        <li>instagram feed</li>
-                    </ul>
                 </div>
 
             </div>

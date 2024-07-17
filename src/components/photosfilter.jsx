@@ -15,22 +15,22 @@ const PhotosFilter = () => {
     const [photos] = useState(initialPhotos);
     const [filter, setFilter] = useState('all');
 
-    const filteredPhotos = photos.filter(photo => filter === 'all' || photo.category === filter);
+    const filteredPhotos = photos.filter(photo => filter === 'all' || (filter !== 'null' && photo.category === filter));
 
     return (
         <div>
-            <div>
-                <button onClick={() => setFilter('all')}>Toutes</button>
-                <button onClick={() => setFilter('selfie')}>Selfies</button>
-                <button onClick={() => setFilter('bestie')}>Besties</button>
-                <button onClick={() => setFilter('job')}>Job</button>
-            </div>
-
-            <div>
-                {filteredPhotos.map(photo => (
-                <img key={photo.id} src={photo.src} alt={photo.category} />
-                ))}
-            </div>
+        <div>
+            <button onClick={() => setFilter('all')}>Toutes</button>
+            <button onClick={() => setFilter('selfie')}>Selfies</button>
+            <button onClick={() => setFilter('bestie')}>Besties</button>
+            <button onClick={() => setFilter('null')}>Lover</button>
+            <button onClick={() => setFilter('job')}>Job</button>
+        </div>
+        <div>
+            {filteredPhotos.map(photo => (
+            <img key={photo.id} src={photo.src} alt={photo.category} />
+            ))}
+        </div>
         </div>
     );
 };

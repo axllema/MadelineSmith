@@ -17,7 +17,7 @@ function Contact() {
     }, []);
 
     return (
-        <div>
+        <div className='contact'>
             <Loader visible={loading} />
             <Header className="header"/>
 

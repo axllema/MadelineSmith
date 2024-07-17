@@ -18,6 +18,14 @@ function Gallery() {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        const hoverEffects = document.querySelectorAll('.hover-effect');
+        hoverEffects.forEach((element, index) => {
+            const delay = index * 0.3;
+            element.style.animationDelay = `${delay}s`;
+        });
+    }, []);
+
     return (
         <div className='gallery'>
             <Loader visible={loading} />
@@ -28,35 +36,35 @@ function Gallery() {
 
                 <div className='gallery-elements-quotes'>
 
-                <div className='gallery-elements-quotes-one'>
-                    <p>
-                        <span className="hover-effect">❀</span>
-                        <span className="hover-effect">𖤣</span>
-                        <span className="hover-effect">𖥧</span>
-                        <span className="hover-effect">𖡼</span>
-                        <span className="hover-effect">⊱</span>
-                        <span className="hover-effect">✿</span>
-                        <span className="hover-effect">⊰</span>
-                        <span className="hover-effect">𖡼</span>
-                        <span className="hover-effect">𖥧</span>
-                        <span className="hover-effect">𖤣</span>
-                        <span className="hover-effect">❀</span>
-                    </p>
-                    <p className='gallery-elements-quotes-one-title'>LIFE MOMENTS</p>
-                    <p>
-                        <span className="hover-effect">❀</span>
-                        <span className="hover-effect">𖤣</span>
-                        <span className="hover-effect">𖥧</span>
-                        <span className="hover-effect">𖡼</span>
-                        <span className="hover-effect">⊱</span>
-                        <span className="hover-effect">✿</span>
-                        <span className="hover-effect">⊰</span>
-                        <span className="hover-effect">𖡼</span>
-                        <span className="hover-effect">𖥧</span>
-                        <span className="hover-effect">𖤣</span>
-                        <span className="hover-effect">❀</span>
-                    </p>
-                </div>
+                    <div className='gallery-elements-quotes-one'>
+                        <p>
+                            <span className="hover-effect">❀</span>
+                            <span className="hover-effect">𖤣</span>
+                            <span className="hover-effect">𖥧</span>
+                            <span className="hover-effect">𖡼</span>
+                            <span className="hover-effect">⊱</span>
+                            <span className="hover-effect">✿</span>
+                            <span className="hover-effect">⊰</span>
+                            <span className="hover-effect">𖡼</span>
+                            <span className="hover-effect">𖥧</span>
+                            <span className="hover-effect">𖤣</span>
+                            <span className="hover-effect">❀</span>
+                        </p>
+                        <p className='gallery-elements-quotes-one-title'>LIFE MOMENTS</p>
+                        <p>
+                            <span className="hover-effect">❀</span>
+                            <span className="hover-effect">𖤣</span>
+                            <span className="hover-effect">𖥧</span>
+                            <span className="hover-effect">𖡼</span>
+                            <span className="hover-effect">⊱</span>
+                            <span className="hover-effect">✿</span>
+                            <span className="hover-effect">⊰</span>
+                            <span className="hover-effect">𖡼</span>
+                            <span className="hover-effect">𖥧</span>
+                            <span className="hover-effect">𖤣</span>
+                            <span className="hover-effect">❀</span>
+                        </p>
+                    </div>
 
                     <p className='gallery-elements-quotes-text'> &quot;be fearless in the pursuit of what sets your soul on fire.&quot; </p>
                 </div>
@@ -64,7 +72,6 @@ function Gallery() {
                 <div className='gallery-elements-filters'>
                     <PhotosFilter />
                 </div>
-
 
                 <div className='gallery-interlude'>
                     <p> ･*:❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･ </p>
@@ -74,14 +81,13 @@ function Gallery() {
                     <p> ･*:❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･ </p>
                 </div>
 
-
                 <div className='gallery-elements-feed'>
-                    <InstaFeed/>
+                    <InstaFeed />
                 </div>
 
             </div>
 
-            <Footer/>
+            <Footer />
         </div>
     );
 }

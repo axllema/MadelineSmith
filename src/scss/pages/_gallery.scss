@@ -34,14 +34,10 @@
                     }
                 }
             }
-
-            .hover-effect {
-                display: inline-block; 
-                transition: transform 0.3s ease; 
-            }
             
-            .hover-effect:hover {
-                transform: scale(1.6); /* Ajustez la valeur pour obtenir l'effet désiré */
+            .hover-effect {
+                display: inline-block;
+                animation: scaleUp 1s ease-in-out infinite;
             }
 
             &-text{
@@ -65,5 +61,14 @@
         color: #fcf8ed;
         font-size: 25px;
         gap: 60px;
+    }
+}
+
+@keyframes scaleUp {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
     }
 }

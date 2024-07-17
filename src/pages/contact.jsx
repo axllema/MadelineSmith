@@ -23,13 +23,7 @@ function Contact() {
 
             <div>
                 <h1>Contact Page</h1>
-                <ul>
-                    <li>telephone GTA</li>
-                    <li>adresse GTA (quartier?), Los Santos</li>
-                    <li>job - hairdresser / autre, où ça se trouve</li>
-                    <li>instagram/ life invader @</li>
-                    <li>email (discord irl) : axpostrophe@discord.com</li>
-                </ul>
+                
             </div>
 
             <Footer/>

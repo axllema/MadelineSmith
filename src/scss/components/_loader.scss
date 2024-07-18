@@ -77,28 +77,3 @@ $delay: math.div($time, 2);
         }
     }
 }
-
-.loader-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-    font-family: 'YourFont', sans-serif;
-    animation: fadeIn 2s ease-in-out;
-
-    .loader-text-top,
-    .loader-text-bottom {
-        font-size: 24px;
-        animation: fadeIn 2s ease-in-out;
-    }
-
-    .loader-text-top {
-        transform: translateY(-50%) rotate(-10deg);
-    }
-
-    .loader-text-bottom {
-        transform: translateY(50%) rotate(10deg);
-    }
-}

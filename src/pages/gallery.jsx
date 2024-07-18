@@ -36,7 +36,7 @@ function Gallery() {
 
                 <div className='gallery-elements-quotes'>
 
-                    <div className='gallery-elements-quotes-one'>
+                    <section className='gallery-elements-quotes-one'>
                         <p>
                             <span className="hover-effect">❀</span>
                             <span className="hover-effect">𖤣</span>
@@ -64,7 +64,7 @@ function Gallery() {
                             <span className="hover-effect">𖤣</span>
                             <span className="hover-effect">❀</span>
                         </p>
-                    </div>
+                    </section>
 
                     <p className='gallery-elements-quotes-text'> &quot;be fearless in the pursuit of what sets your soul on fire.&quot; </p>
                 </div>

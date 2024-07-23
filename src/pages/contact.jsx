@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import Loader from '../components/loader';
 import Header from '../layout/header';
-import Footer from '../layout/footer.jsx';
+import Smiley1 from '../assets/img/smiley1.png';
+import Smiley2 from '../assets/img/smiley2.jpg';
+import Flower1 from '../assets/img/flower1.jpg';
+import Flower2 from '../assets/img/flower2.jpg';
 import Sun1 from '../assets/img/sun1.png';
 import Sun2 from '../assets/img/sun2.png';
+import Footer from '../layout/footer.jsx';
 import '../scss/style.scss';
 import '../scss/pages/_contact.scss';
 
@@ -29,16 +33,27 @@ function Contact() {
             </div>
 
             <div className="contact-container-1">
+
+                <img alt="Smiley" src={Smiley2} className='contact-container-smiley2' />
+                <img alt="Flower" src={Flower1} className='contact-container-smiley1 flower1' />
+
                 <div className="contact-infos-1">
-                    <div className="contact-info">
-                            <h2> Location </h2>
-                            <p> Los Santos, California </p>
+
+                    <div className="background-info">
+                        <div className="contact-info">
+                                <h2> Location </h2>
+                                <p> Los Santos, California </p>
+                        </div>
                     </div>
 
-                    <div className="contact-info">
-                        <h2> Job </h2>
-                        <p> Hair Salon, Los Santos</p>
+                    <div className="background-info">
+                        <div className="contact-info">
+                            <h2> Job </h2>
+                            <p> .... , Los Santos</p>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
 
@@ -49,18 +64,28 @@ function Contact() {
             </div>
             
             <div className="contact-container-2">
+
+                <img alt="Smiley" src={Smiley1} className='contact-container-smiley1' />
+                <img alt="Smiley" src={Flower2} className='contact-container-smiley2 flower2' />
+
                 <div className="contact-infos-2">
-                    <div className="contact-info">
-                        <h2> Phone </h2>
-                        <p>555-...-...</p>
+
+                    <div className="background-info">
+                        <div className="contact-info">
+                            <h2> Phone </h2>
+                            <p>555-...-...</p>
+                        </div>
                     </div>
 
-                    <div className="contact-info">
-                        <h2> Email </h2>
-                        <p> axpostrophe@discord.com </p>
+                    <div className="background-info">
+                        <div className="contact-info">
+                            <h2> Email </h2>
+                            <p> ax....@discord.com </p>
+                        </div>
                     </div>
-                </div>
+
             </div>
+        </div>
 
             <Footer/>
 

@@ -8,7 +8,7 @@ function Introduction() {
     return (
         <section className="introduction">
                     
-                    <h2> Hi, I&apos;m Madeline Smith.</h2>
+                    <h2> Hi, I&apos;m Madeline Summers.</h2>
                     <h3> but everyone calls me Maddy.</h3>
 
                     <section className="emojis">
@@ -19,9 +19,9 @@ function Introduction() {
                     </section>
                     
                     <div className="introduction-images">
-                        <img alt="Madeline Smith" src={Maddy1} className="intro-images-left" />
+                        <img alt="Madeline Summers" src={Maddy1} className="intro-images-left" />
                         <img alt="Work" src={Job} className="intro-images-middle" />
-                        <img alt="Madeline Smith" src={Maddy2} className="intro-images-right" />
+                        <img alt="Madeline Summers" src={Maddy2} className="intro-images-right" />
                     </div>
 
                     <p className='introduction-info'> Hairstylist. 22. Californian. Loyal. Hard-working & Party-Animal.</p>

@@ -6,10 +6,10 @@ import '../scss/components/_instafeed.scss';
 const InstaFeed = () => {
     return (
         <div className='instafeed'>
-            <img alt="Madeline Smith" src={Background1} className='instafeed-background' />
+            <img alt="Madeline Summers" src={Background1} className='instafeed-background' />
 
             <div className='instafeed-container'>
-                <h1 className='instafeed-container-title'> what&rsquo;s new on @madelinesmith lifeinvader? </h1>
+                <h1 className='instafeed-container-title'> what&rsquo;s new on @madelinesummers lifeinvader? </h1> 
 
                 <div className='instafeed-container-photos'>
                     {LifeinvaderPics.map(pic => (

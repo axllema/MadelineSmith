@@ -9,10 +9,10 @@ function BottomSection() {
     return (
         <section className="bottom-page">
                     <div className="bottom-page-images">
-                            <img alt="Madeline Smith" src={Maddy3} className='bottom-page-images-maddy' />
+                            <img alt="Madeline Summers" src={Maddy3} className='bottom-page-images-maddy' />
                             <img alt="Santa Barbara" src={SantaBarbara} className='bottom-page-images-santabarbara' />
                             <img alt="Smiley" src={Smiley} className='bottom-page-images-smiley1' />
-                            <img alt="Madeline Smith" src={Maddy4} className='bottom-page-images-maddyplage' />
+                            <img alt="Madeline Summers" src={Maddy4} className='bottom-page-images-maddyplage' />
                             <img alt="Smiley" src={Smiley} className='bottom-page-images-smiley2' />
                     </div>
 

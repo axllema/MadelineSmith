@@ -10,7 +10,7 @@ function Playlist() {
     const tracks = [
         { img: SueImg, label: '࣭ ⭑ཐིཋྀ Sue Me - Sabrina Carpenter ཐིཋ๋ྀ࣭ ⭑' },
         { img: GimmeImg, label: '｡ﾟ𖤓 ﾟ Gimme! Gimme! (...) - ABBA ｡ﾟ𖤓 ﾟ' },
-        { img: OffImg, label: '˚⋆ᡣ𐭩 Off To The Races - Lana Del Rey ᡣ𐭩˚⋆' },
+        { img: OffImg, label: '˚⋆ᡣ𐭩 Bed Chem - Sabrina Carpenter ᡣ𐭩˚⋆' },
         { img: GardenImg, label: '✮⋆˙ The Chain - Fleetwood Mac ✮⋆˙' },
         { img: CoastImg, label: '༘ ೀ Water - Tyla  ༘ ೀ' },
         { img: WaterImg, label: '˖°𓇼 Coast - Hailee Steinfeld 𓇼°˖' },

@@ -3,6 +3,9 @@ import { Howl, Howler } from 'howler';
 import Water from '../assets/music/Water.mp3';
 import Looking from '../assets/music/LookingAtMe.mp3';
 import Coast from '../assets/music/Coast.mp3';
+import GoodGraces from '../assets/music/GoodGraces.mp3';
+import Breakfast from '../assets/music/Breakfast.mp3';
+import BedChem from '../assets/music/BedChem.mp3';
 import '../scss/components/_musicplayer.scss';
 import '../scss/style.scss';
 
@@ -24,6 +27,18 @@ const MusicPlayer = () => {
         {
             title: '⋆˚𝜗𝜚 Coast - Hailee Steinfeld⋆˚𝜗𝜚',
             src: [Coast],
+        },
+        {
+            title: '⋆˚𝜗𝜚 Good Graces - Sabrina Carpenter⋆˚𝜗𝜚',
+            src: [GoodGraces],
+        },
+        {
+            title: '⋆˚𝜗𝜚 Breakfast - Dove Cameron ⋆˚𝜗𝜚',
+            src: [Breakfast],
+        },
+        {
+            title: '⋆˚𝜗𝜚 Bed Chem - Sabrina Carpenter⋆˚𝜗𝜚',
+            src: [BedChem],
         }
     ], []);
 

@@ -49,7 +49,7 @@ function Contact() {
                     <div className="background-info">
                         <div className="contact-info">
                             <h2> Job </h2>
-                            <p> .... , Los Santos</p>
+                            <p> Pearl&rsquo;s , Los Santos</p>
                         </div>
                     </div>
 
@@ -73,14 +73,14 @@ function Contact() {
                     <div className="background-info">
                         <div className="contact-info">
                             <h2> Phone </h2>
-                            <p>555-...-...</p>
+                            <p> 555-11139 </p>
                         </div>
                     </div>
 
                     <div className="background-info">
                         <div className="contact-info">
                             <h2> Email </h2>
-                            <p> ax....@discord.com </p>
+                            <p> axpotrophe@discord.com </p>
                         </div>
                     </div>
 
@@ -94,3 +94,5 @@ function Contact() {
 }
 
 export default Contact;
+
+// photo du pearls + photo ville + ...?

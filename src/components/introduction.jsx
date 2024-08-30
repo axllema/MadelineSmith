@@ -24,7 +24,7 @@ function Introduction() {
                         <img alt="Madeline Summers" src={Maddy2} className="intro-images-right" />
                     </div>
 
-                    <p className='introduction-info'> Hairstylist. 22. Californian. Loyal. Hard-working & Party-Animal.</p>
+                    <p className='introduction-info'> Waitress. 22. Californian. Loyal. Hard-working & Party-Animal.</p>
                     <p className='introduction-location'> ༘˚⋆𐙚 ↪ Los Santos  ོ 𖦹.✧˚</p>
 
                 </section>

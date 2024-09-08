@@ -55,22 +55,22 @@ function Contact() {
                     </div>
 
                     <div className="contact-images">
-                        <img alt="Smiley" src={Smiley2} className='contact-container-smiley2' />
+                        <img alt="Smiley" src={Smiley2} className='contact-images-smiley2' />
 
-                        <img alt="Pearls" src={Pearls1} className='contact-container-pearls' />
-                        <img alt="Los Santos (Los Angeles)" src={LosSantos1} className='contact-container-lossantos' />
+                        <img alt="Pearls" src={Pearls1} className='contact-images-pearls' />
+                        <img alt="Los Santos (Los Angeles)" src={LosSantos1} className='contact-images-lossantos' />
 
-                        <img alt="Flower" src={Flower1} className='contact-container-smiley1 flower1' />
+                        <img alt="Flower" src={Flower1} className='contact-images-smiley1 flower1' />
 
 
-                        <img alt="Smiley" src={Smiley1} className='contact-container-smiley1' />
+                        <img alt="Smiley" src={Smiley1} className='contact-images-smiley1' />
 
-                        <img alt="Maddy mirror selfie" src={MirrorSelfie} className='contact-container-mirrorselfie' />
-                        <img alt="Maddy coiffeuse" src={Maddss} className='contact-container-maddss' />
+                        <img alt="Maddy mirror selfie" src={MirrorSelfie} className='contact-images-mirrorselfie' />
+                        <img alt="Maddy coiffeuse" src={Maddss} className='contact-images-maddss' />
 
-                        <img alt="Smiley" src={Smiley2} className='contact-container-smiley2' />
+                        <img alt="Smiley" src={Smiley2} className='contact-images-smiley2' />
 
-                        <img alt="Smiley" src={Flower2} className='contact-container-smiley2 flower2' />
+                        <img alt="Smiley" src={Flower2} className='contact-images-smiley2 flower2' />
                     </div>
 
 

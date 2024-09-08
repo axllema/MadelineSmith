@@ -20,6 +20,10 @@
         }
     }
 
+    &-images{
+        position: relative;
+    }
+
     .sun-container {
         display: flex;
         justify-content: center;
@@ -73,10 +77,48 @@
     margin: 30px 0;
 }
 
-.contact-container-smiley1,
-.contact-container-smiley2 {
+.contact-images-smiley1,
+.contact-images-smiley2,
+.contact-images-pearls,
+.contact-images-lossantos,
+.contact-images-mirrorselfie,
+.contact-images-maddss {
     position: absolute;
+}
+
+.contact-images-lossantos{
+    width: 240px;
+    bottom: 100px;
+    left: 700px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-images-pearls{
+    width: 190px;
+    bottom: 30px;
+    left: 840px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 2;
+}
+
+.contact-images-maddss {
+    width: 230px;
+    top: 340px;
+    left: 115px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-images-mirrorselfie{
+    width: 160px;
+    top: 250px;
+    left: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.contact-images-smiley1,
+.contact-images-smiley2 {
+    z-index: 3;
     width: 50px;
     margin-left: 0;
     margin-top: 20px;
@@ -90,24 +132,24 @@
     }
 }
 
-.contact-container-smiley1 {
-    top: 1035px;
-    right: 640px;
+.contact-images-smiley1 {
+    top: 400px;
+    left: 95px;
 }
 
-.contact-container-smiley2 {
+.contact-images-smiley2 {
     transform: rotate(-18deg);
-    top: 480px;
-    right: 600px;
+    left: 815px;
+    top: -150px;
 }
 
 .flower1 {
     transform: rotate(-18deg);
-    top: 225px;
-    right: 680px;
+    left: 915px;
+    top: -320px;
 }
 
 .flower2 {
-    top: 880px;
-    left: 600px;
+    top: 295px;
+    left: 160px;
 }

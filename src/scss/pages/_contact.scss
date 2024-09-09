@@ -1,6 +1,21 @@
+@import '../utils/mixins';
+
 .contact {
-    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: 100%;
+    margin-top: 44px;
     background-color: #fcf8ed;
+
+    @include desktop { 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        width: 100%;
+        margin-top: 128px;
+        background-color: #fcf8ed;
+    }
 
     &-quotes {
         display: flex;
@@ -8,23 +23,42 @@
         justify-content: center;
         align-items: center;
         background-color: #e8e1d7;
-        height: 100px;
+        height: 50px;
+
+        @include desktop { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e8e1d7;
+            height: 100px;
+        }
+
 
         &-text {
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 400;
             color: #553119;
             text-shadow: 1px 1px 3px rgba(43, 28, 22, 0.501);
             text-align: center;
             font-style: italic;
+            
+            @include desktop { 
+                font-size: 15px;
+                font-weight: 400;
+                color: #553119;
+                text-shadow: 1px 1px 3px rgba(43, 28, 22, 0.501);
+                text-align: center;
+                font-style: italic;
+            }
         }
     }
 
-    &-images{
+    &-images {
         position: relative;
     }
 
-    &-info{
+    &-info {
         padding-left: 20px;
     }
 
@@ -34,8 +68,13 @@
         align-items: center;
 
         &-img {
-            width: 10%;
+            width: 28%;
             transition: transform 0.3s ease;
+
+            @include desktop { 
+                width: 10%;
+                transition: transform 0.3s ease;
+            }
 
             &:hover {
                 transition: all 4s ease;
@@ -48,20 +87,38 @@
 .contact-infos-1 {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin-left: 150px;
+    align-items: center;
+    margin-left: 0px;
+
+    @include desktop { 
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 150px;
+    }
 }
 
 .contact-infos-2 {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    margin-right: 150px;
+    align-items: center;
+    margin-right: 0;
+
+    @include desktop { 
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 150px;
+    }
 }
 
 .contact-infos-1,
 .contact-infos-2 {
-    padding: 50px 0px;
+    padding: 230px 0px 100px 0px;
+
+    @include desktop { 
+        padding: 50px 0px;
+    }
 } 
 
 .contact-info {
@@ -69,16 +126,33 @@
     flex-direction: column;
     align-items: start;
     color: #553119;
-    font-size: 20px;
+    font-size: 12px;
+
+    @include desktop { 
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: #553119;
+        font-size: 20px;
+    }
 }
 
 .background-info {
     display: flex;
     align-items: center;
     background-color: #e8e1d7;
-    width: 35%;
+    width: 50%;
     border-radius: 12px;
-    margin: 30px 0;
+    margin: 15px 0;
+
+    @include desktop { 
+        display: flex;
+        align-items: center;
+        background-color: #e8e1d7;
+        width: 35%;
+        border-radius: 12px;
+        margin: 30px 0;
+    }
 }
 
 .contact-images-smiley1,
@@ -91,44 +165,85 @@
 }
 
 .contact-images-lossantos{
-    width: 240px;
-    bottom: 100px;
-    left: 810px;
+    width: 140px;
+    bottom: 260px;
+    right : -65px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    @include desktop { 
+        width: 240px;
+        bottom: 100px;
+        left: 810px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+    }
 }
 
 .contact-images-pearls{
-    width: 190px;
-    bottom: 30px;
-    left: 910px;
+    width: 100px;
+    bottom: 240px;
+    right : -105px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 2;
+
+    @include desktop { 
+        width: 190px;
+        bottom: 30px;
+        left: 910px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
 }
 
 .contact-images-maddss {
-    width: 230px;
-    top: 340px;
-    left: 115px;
+    width: 140px;
+    top: 230px;
+    left: -20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    
+    @include desktop { 
+        width: 230px;
+        top: 340px;
+        left: 115px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .contact-images-mirrorselfie{
-    width: 160px;
-    top: 250px;
-    left: 25px;
+    width: 100px;
+    top: 213px;
+    left: -80px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 2;
+
+    @include desktop { 
+        width: 160px;
+        top: 250px;
+        left: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
 }
 
 .contact-images-smiley1,
 .contact-images-smiley2 {
     z-index: 3;
-    width: 50px;
+    width: 35px;
     margin-left: 0;
     margin-top: 20px;
     border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
+
+    @include desktop { 
+        z-index: 3;
+        width: 50px;
+        margin-left: 0;
+        margin-top: 20px;
+        border-radius: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
 
     &:hover {
         transition: all 0.8s ease;
@@ -137,23 +252,46 @@
 }
 
 .contact-images-smiley1 {
-    top: 400px;
-    left: 95px;
+    top: 290px;
+    left: -35px;
+
+    @include desktop { 
+        top: 400px;
+        left: 95px;
+    }
 }
 
 .contact-images-smiley2 {
     transform: rotate(-18deg);
-    left: 895px;
-    top: -150px;
+    bottom: 245px;
+    right : -20px;
+
+    @include desktop { 
+        transform: rotate(-18deg);
+        left: 895px;
+        top: -150px;
+    }
 }
 
 .flower1 {
     transform: rotate(-18deg);
-    left: 1020px;
-    top: -320px;
+    bottom: 205px;
+    right : 20px;
+    z-index: 3;
+
+    @include desktop { 
+        transform: rotate(-18deg);
+        left: 1020px;
+        top: -320px;
+    }
 }
 
 .flower2 {
-    top: 295px;
-    left: 160px;
+    top: 205px;
+    left: 5px;
+
+    @include desktop { 
+        top: 295px;
+        left: 160px;
+    }
 }

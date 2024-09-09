@@ -34,7 +34,7 @@ const LifeinvaderPics = [
     {
         id: 5,
         image: Basket,
-        caption: "who'd you think is the winner? @",
+        caption: "who'd you think is the winner?",
         hashtags: ["#basket", "#goodlife", "#friends"]
     },
     {

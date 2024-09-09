@@ -6,7 +6,16 @@
     flex-direction: column;
     align-items: center;
     background-color: #fcf8ed;
-    padding: 40px 0;
+    padding: 30px 0;
+
+    @include desktop { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fcf8ed;
+        padding: 40px 0;
+    }
 
     &-background {
         position: absolute;
@@ -24,19 +33,41 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
-        max-width: 1500px;
+        max-width: 310px;
         background-color: rgba(232, 225, 215, 0.95);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         z-index: 3;
 
+        @include desktop { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            max-width: 1500px;
+            background-color: rgba(232, 225, 215, 0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            z-index: 3;
+        }
+
         &-title {
             color: #553119;
-            font-size: 20px;
+            font-size: 12px;
             font-weight: 500;
             font-style: italic;
             transition: transform 0.3s ease;
             padding-bottom: 1rem;
+
+            @include desktop { 
+                color: #553119;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: italic;
+                transition: transform 0.3s ease;
+                padding-bottom: 1rem;
+            }
         }
 
         &-photos {
@@ -45,10 +76,24 @@
             justify-content: center;
             gap: 5px; 
 
+            @include desktop { 
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px; 
+            }
+
             &-item {
                 position: relative;
-                width: calc(15% - 5px);
+                width: calc(50% - 5px);
                 overflow: hidden;
+
+                @include desktop { 
+                    position: relative;
+                    width: calc(15% - 5px);
+                    overflow: hidden;
+                }
+    
 
                 &:hover .instafeed-container-photos-item-overlay,
                 &:focus .instafeed-container-photos-item-overlay {
@@ -78,15 +123,44 @@
                     visibility: hidden;
                     transition: opacity 0.3s ease, visibility 0.3s ease;
 
+                    @include desktop { 
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.3s ease, visibility 0.3s ease;
+                    }
+        
+
                     &-caption {
                         margin-bottom: 10px;
-                        font-size: 10px;
+                        font-size: 13px;
                         text-align: center;
+
+                        @include desktop { 
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                            text-align: center;
+                        }
                     }
 
                     &-hashtags {
-                        font-size: 5px;
+                        font-size: 9px;
                         text-align: center;
+
+                        @include desktop { 
+                            font-size: 12px;
+                            text-align: center;
+                        }
                     }
                 }
             }

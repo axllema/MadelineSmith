@@ -16,8 +16,8 @@ const InstaFeed = () => {
                         <div key={pic.id} className='instafeed-container-photos-item'>
                             <img alt={pic.caption} src={pic.image} className='instafeed-container-photos-item-img' />
                             <div className='instafeed-container-photos-item-overlay'>
-                                <div className='instafeed-container-photos-item-caption'>{pic.caption}</div>
-                                <div className='instafeed-container-photos-item-hashtags'>
+                                <div className='instafeed-container-photos-item-overlay-caption'>{pic.caption}</div>
+                                <div className='instafeed-container-photos-item-overlay-hashtags'>
                                     {pic.hashtags.join(' ')}
                                 </div>
                             </div>

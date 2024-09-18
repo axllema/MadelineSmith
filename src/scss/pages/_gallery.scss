@@ -34,6 +34,10 @@
                 font-size: 18px;
             }
 
+            @include desktop-large { 
+                font-size: 15px;
+            }
+
             &-one{
                 display: flex;
                 flex-direction: column;
@@ -64,6 +68,10 @@
                     transition: transform 0.3s ease; 
                 }
 
+                @include desktop-large { 
+                    font-size: 30px;
+                }
+
                     &:hover{
                         transform: scale(1.2);
                     }
@@ -90,6 +98,10 @@
                     text-shadow: 1px 1px 3px rgb(255, 255, 255);
                     text-align: center;
                     font-style: italic;
+                }
+
+                @include desktop-large { 
+                    font-size: 18px;
                 }
             }
         }

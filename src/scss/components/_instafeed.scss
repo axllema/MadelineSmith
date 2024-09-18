@@ -93,6 +93,11 @@
                     width: calc(15% - 5px);
                     overflow: hidden;
                 }
+
+                @include desktop-large { 
+                    width: calc(10% - 5px);
+                    overflow: hidden;
+                }
     
 
                 &:hover .instafeed-container-photos-item-overlay,
@@ -139,8 +144,8 @@
                         visibility: hidden;
                         transition: opacity 0.3s ease, visibility 0.3s ease;
                     }
-        
 
+                    
                     &-caption {
                         margin-bottom: 10px;
                         font-size: 13px;
@@ -150,6 +155,10 @@
                             margin-bottom: 10px;
                             font-size: 18px;
                             text-align: center;
+                        }
+
+                        @include desktop-large { 
+                            font-size: 13px;
                         }
                     }
 

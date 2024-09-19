@@ -14,6 +14,7 @@ import Lee1 from '../assets/img/lee1.jpg';
 import Roman from '../assets/img/roman.jpg';
 import Dress1 from '../assets/img/dress1.jpg';
 import Date2 from '../assets/img/date2.jpg';
+import Lucky1 from '../assets/img/lucky.jpg';
 import '../scss/style.scss';
 import '../scss/components/_photosfilter.scss';
 
@@ -33,7 +34,8 @@ const PhotosFilter = () => {
         { id: 12, category: 'friends', src: Lee1, caption: 'always in a party mood w/ lee', rotationClass: 'rotate-right-2' },
         { id: 13, category: 'myself', src: Lecture2, caption: 'morning lecture', rotationClass: 'rotate-left-5' },
         { id: 14, category: 'lover', src: Date2, caption: 'some nightimes have nice surprises...', rotationClass: 'rotate-left-5' },
-        { id: 15, category: 'myself', src: Dress1, caption: '"only bought this dress so you could take it off..."', rotationClass: 'rotate-right-5' }
+        { id: 15, category: 'myself', src: Dress1, caption: '"only bought this dress so you could take it off..."', rotationClass: 'rotate-right-5' },
+        { id: 15, category: 'lover', src: Lucky1, caption: 'the stars, they aligned', rotationClass: 'rotate-left-10' }
     ];
 
     const [photos] = useState(initialPhotos);
